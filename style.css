@@ -1,0 +1,17 @@
+body{
+    background-color:palevioletred;
+    color: midnightblue;
+}
+h1{
+    font-size: 50px;
+    color: mediumblue;
+}
+button{
+    background-color:turquoise;
+}
+input{
+    width: 500px;
+}
+#b{
+    background-color:hotpink;
+}
