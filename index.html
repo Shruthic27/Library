@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,12 +26,12 @@
          <p> When you have checked out all of your books click log out.</p>
         <p> Enjoy your books.</p>
          <br>
-        <input id="name" placeholder="Enter your name here">
+        <input id="n" placeholder="Enter your name here">
         <br>
         <br>
         <input id="book" placeholder="Enter the name of your book here">
         <h3>*You may borrow up to 5 boks at a time.</h3> 
-        <button>Checkout</button>
+        <button onclick="checkout()"> Checkout</button>
         <br>
         <br>
         <button onclick="lo()">Log Out</button>
@@ -34,5 +40,6 @@
         <button id="b" onclick="ot12()"> Books Status Librarians Only</button>
     </center>
     <script src="main.js"></script>
+    <script src="main3.js"></script>
 </body>
 </html>
