@@ -15,7 +15,7 @@ const firebaseConfig = {
   function btms(){
     window.location="index.html";
     }
-
+  
     var p=":"
 var up=""
 function li(){
@@ -23,5 +23,4 @@ up=document.getElementById("up").value
     if (up==p) {
 window.location="index3.html";
 }
-}
-    
+}    
