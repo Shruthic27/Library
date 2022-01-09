@@ -14,6 +14,11 @@ firebase.initializeApp(firebaseConfig);
 
 var p = ":"
 var up = ""
+var bd=new Date()
+bd.getDate();
+var rd= bd+10
+
+
 function ot12() {
   window.location = "index2.html";
 }
@@ -35,6 +40,9 @@ function lo() {
 function ls() {
   localStorage.setItem("Name", n)
   localStorage.setItem("Book Name", book)
+
+  localStorage.setItem("BD", bd)
+  localStorage.setItem("RD", rd)
 }
 
 function checkout() {
@@ -42,8 +50,9 @@ function checkout() {
   book = document.getElementById("book").value
   ls();
   
-  firebase.database().ref("/").child(n).update({
-    purpose:"adding name to data"
-    ,childKey:book
+  firebase.database().ref("/").child(n).child(book).child(bd).child(rd).update({
+  //bookName:book
   })
 }
+
+
